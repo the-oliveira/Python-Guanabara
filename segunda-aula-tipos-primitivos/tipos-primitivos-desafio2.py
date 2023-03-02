@@ -9,6 +9,7 @@ print('É um decimal? {}'.format(x.isdecimal()))
 print('É um alfanumérico? {}'.format(x.isalnum()))
 print('Está em letras maiúsculas? {}'.format(x.isupper()))
 print('Está em letras minúsculas? {}'.format(x.islower()))
+print('Está capitalizada? {}'.format(x.istitle()))
 
 
 
