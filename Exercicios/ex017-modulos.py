@@ -1,4 +1,4 @@
-import math
+from math import hypot
 
 catetoposto = float(input('Digite o valor do cateto oposto: '))
 catetoadj = float(input('Digite o valor do cateto adjacente: '))
