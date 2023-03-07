@@ -1,2 +1,2 @@
 frase = 'Bem vindo ao mundo de Ddz'
-print(frase.count('e'))
+print(frase.lower().count('e'))
