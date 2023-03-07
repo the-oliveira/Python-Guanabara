@@ -4,4 +4,4 @@ frase = unidecode(com_acento)
 
 print('Quantas vezes a letra A foi utilizada na sua frase: {}.'.format(frase.count('a')))
 print('A primeira posição da letra A é: {}'.format(frase.find('a')+1))
-print('A ultima posição da letra A é: {}'.format(frase.rfind('a')))
+print('A ultima posição da letra A é: {}'.format(frase.rfind('a')+1))
