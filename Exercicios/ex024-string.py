@@ -1,3 +1,5 @@
-cidade: str = input('Digite uma cidade: ')
+cidade = input('Digite uma cidade: ').strip()
+santo = cidade.lower()
+print('santo' in santo)
 
-print(cidade.__contains__('Santo'))
+
