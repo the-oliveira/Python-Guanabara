@@ -1,4 +1,4 @@
-velocidade = int(input('Digite a velocidade que o veículo alcançou na via: '))
+velocidade = float(input('Digite a velocidade que o veículo alcançou na via: '))
 multa = (velocidade - 80) * 7
 print('Você estava passando pela via e acabou encontrando um radar!!')
 if velocidade > 80:
