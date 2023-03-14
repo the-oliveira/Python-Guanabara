@@ -11,4 +11,3 @@ elif med < 5:
 else:
     print('\033[1:33mSua média foi de {}, portanto você está de recuperação. Não desanime, foi por pouco!'.format(med))
     print('Nos vemos semana que vem!')
-    
