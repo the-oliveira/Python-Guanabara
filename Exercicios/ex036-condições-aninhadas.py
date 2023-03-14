@@ -8,5 +8,12 @@ cores = {'vermelho':'\033[1:31m',
          }
 parcelas = anos*12
 valorparcela = casa/parcelas
+trintasalario = (salario*30/100) - salario
+
+if valorparcela > trintasalario:
+    
+
+
+
 
 print('Tenha um excelente dia!!')
