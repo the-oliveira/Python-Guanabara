@@ -4,3 +4,5 @@
 #Segundo valor, após o estilo, é o da cor do texto: 30(preto) 31(vermelho) 32(verde) 33(amarelo) 34(azul) 35(magenta) 36(ciano) 37(cinza) e 97(branco)
 #Terceiro valor, cor do background: 40(preto) 41(vermelho) 42(verde) 43(amarelo) 44(azul) 45(magenta) 46(ciano) 47(cinza) 107(branco)
 
+print('\033[1;97;41mSalve!\033[m')
+print('\033[1;97;45mOlá Mundo!\033[m')
