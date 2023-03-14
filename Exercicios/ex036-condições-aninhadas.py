@@ -8,12 +8,11 @@ cores = {'vermelho':'\033[1:31m',
          }
 parcelas = anos*12
 valorparcela = casa/parcelas
-trintasalario = (salario*30/100) - salario
 
-if valorparcela > trintasalario:
-    
+if valorparcela < salario*30/100:
+    print('Parabéns, o seu financiamento foi {}aprovado!{}'.format(cores['verde'], cores['limpa']))
+    print('Você ira comprar uma casa de R${:.2f} em {}x de R${:.2f}'.format(casa, parcelas, valorparcela))
+else:
+    print('{}Financiamento negado{}\nAs parcelas excederam o valor de 30% do seu salário atual.'.format(cores['vermelho'], cores['limpa']))
+print('Tenha um excelente dia {}!'.format(nome))
 
-
-
-
-print('Tenha um excelente dia!!')
