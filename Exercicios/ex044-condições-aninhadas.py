@@ -1,3 +1,4 @@
+print(f'\033[1:33m{"LOJA DE BRONZE":=^50}\033[m')
 produto = float(input('Digite o valor do produto: R$'))
 print('''O produto possui o valor de R${:.2f}, você pode escolher entre:
 [1] Pagar á vista no dinheiro ou cheque com 10% de desconto (digite 1).
