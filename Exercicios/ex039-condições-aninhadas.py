@@ -1,5 +1,11 @@
 import datetime
 nome = str(input('Digite o seu nome: '))
+sexo = str(input('Qual o seu sexo? '))
+sexolow = sexo.lower()
+if sexolow == 'feminino':
+    print('Você não precisa se alistar obrigatóriamente!')
+    print('Tenha um excelente dia!')
+    exit()
 data = int(input('Você nasceu em que ano? '))
 idade = datetime.date.today().year - data
 
