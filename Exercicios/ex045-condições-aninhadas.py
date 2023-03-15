@@ -63,4 +63,4 @@ elif escolha == 'pedra' and ia == 'tesoura' or escolha == 'papel' and ia == 'ped
     print('{}Isso quer dizer que..{}'.format(cores['azul'], cores['limpa']))
     sleep(2)
     print('{}VOCÊ GANHOU!{}'.format(cores['verde'], cores['limpa']))
-print('=-='*30)
+print('=-='*10)
