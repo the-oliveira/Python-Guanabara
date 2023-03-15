@@ -9,11 +9,11 @@ if escolha > 3 or escolha < 1:
     print('Opção inválida, tente novamente!')
     exit()
 elif escolha == 1:
-    print('O valor {} em BINÁRIO é igual a {}.'.format(num, bin(num)))
+    print('O valor {} em BINÁRIO é igual a {}.'.format(num, bin(num)[2:]))
     exit()
 elif escolha == 2:
-    print('O valor {} em OCTAL é igual a {}'.format(num, oct(num)))
+    print('O valor {} em OCTAL é igual a {}'.format(num, oct(num)[2:]))
     exit()
 elif escolha == 3:
-    print('O valor {} em HEXADECIMAL é igual a {}'.format(num, hex(num)))
+    print('O valor {} em HEXADECIMAL é igual a {}'.format(num, hex(num)[2:]))
     exit()
