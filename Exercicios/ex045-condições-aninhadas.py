@@ -3,12 +3,13 @@ from time import  sleep
 cores = {'limpa':'\033[m',
          'vermelho':'\033[1:31m',
          'amarelo':'\033[1:33m',
-         'verde':'\033[1:32m'}
+         'verde':'\033[1:32m',
+         'azul':'\033[1:34m'}
 
 print('''{}HORA DE JOGAR JOKENPO!{}
 {}[ 1 ] PEDRA
 [ 2 ] PAPEL
-[ 3 ] TESOURA{}'''.format(cores['amarelo'], cores['limpa'], cores['vermelho'], cores['limpa']))
+[ 3 ] TESOURA{}'''.format(cores['amarelo'], cores['limpa'], cores['azul'], cores['limpa']))
 escolha = int(input('Faça sua escolha: '))
 ia = randint(1, 3)
 
@@ -38,14 +39,28 @@ print('{}KEN!{}'.format(cores['amarelo'], cores['limpa']))
 sleep(1)
 print('{}PO!!{}'.format(cores['vermelho'], cores['limpa']))
 sleep(1)
-print('=-='*30)
 if escolha == ia:
-    print('SUA ESCOLHA: {} x ESCOLHA DO COMPUTADOR: {}!'.format(escolha.upper(), ia.upper()))
-    print('{}EMPATE!{}'.format(cores['amarelo'], cores['limpa']))
+    print('SUA ESCOLHA: {}!'.format(escolha.upper()))
+    sleep(1)
+    print('ESCOLHA DO COMPUTADOR: {}!'.format(ia.upper()))
+    sleep(1)
+    print('{}Isso quer dizer que..{}'.format(cores['azul'], cores['limpa']))
+    sleep(2)
+    print('{}EMPATOU!{}'.format(cores['amarelo'], cores['limpa']))
 elif escolha == 'pedra' and ia == 'papel' or escolha == 'papel' and ia == 'tesoura' or escolha == 'tesoura' and ia == 'pedra':
-    print('SUA ESCOLHA: {} x ESCOLHA DO COMPUTADOR: {}!'.format(escolha.upper(), ia.upper()))
+    print('SUA ESCOLHA: {}!'.format(escolha.upper()))
+    sleep(1)
+    print('ESCOLHA DO COMPUTADOR: {}!'.format(ia.upper()))
+    sleep(1)
+    print('{}Isso quer dizer que..{}'.format(cores['azul'], cores['limpa']))
+    sleep(2)
     print('{}VOCÊ PERDEU!{}'.format(cores['vermelho'], cores['limpa']))
 elif escolha == 'pedra' and ia == 'tesoura' or escolha == 'papel' and ia == 'pedra' or escolha == 'papel' and ia == 'pedra':
-    print('SUA ESCOLHA: {} x ESCOLHA DO COMPUTADOR: {}!'.format(escolha.upper(), ia.upper()))
+    print('SUA ESCOLHA: {}!'.format(escolha.upper()))
+    sleep(1)
+    print('ESCOLHA DO COMPUTADOR: {}!'.format(ia.upper()))
+    sleep(1)
+    print('{}Isso quer dizer que..{}'.format(cores['azul'], cores['limpa']))
+    sleep(2)
     print('{}VOCÊ GANHOU!{}'.format(cores['verde'], cores['limpa']))
 print('=-='*30)
