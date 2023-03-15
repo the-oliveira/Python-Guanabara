@@ -28,24 +28,24 @@ elif ia == 2:
     ia = 'papel'
 elif ia == 3:
     ia = 'tesoura'
-print('=-='*30)
-print('AGORA É A HORA DA VERDADE!')
-print('=-='*30)
+
+print('\033[1:34mAGORA É A HORA DA VERDADE!\033[m')
+
 sleep(2)
-print('JO')
+print('{}JO!{}'.format(cores['vermelho'], cores['limpa']))
 sleep(1)
-print('KEN')
+print('{}KEN!{}'.format(cores['amarelo'], cores['limpa']))
 sleep(1)
-print('PO!')
+print('{}PO!!{}'.format(cores['vermelho'], cores['limpa']))
 sleep(1)
 print('=-='*30)
 if escolha == ia:
     print('SUA ESCOLHA: {} x ESCOLHA DO COMPUTADOR: {}!'.format(escolha.upper(), ia.upper()))
-    print('EMPATE!')
+    print('{}EMPATE!{}'.format(cores['amarelo'], cores['limpa']))
 elif escolha == 'pedra' and ia == 'papel' or escolha == 'papel' and ia == 'tesoura' or escolha == 'tesoura' and ia == 'pedra':
     print('SUA ESCOLHA: {} x ESCOLHA DO COMPUTADOR: {}!'.format(escolha.upper(), ia.upper()))
-    print('VOCÊ PERDEU!')
+    print('{}VOCÊ PERDEU!{}'.format(cores['vermelho'], cores['limpa']))
 elif escolha == 'pedra' and ia == 'tesoura' or escolha == 'papel' and ia == 'pedra' or escolha == 'papel' and ia == 'pedra':
     print('SUA ESCOLHA: {} x ESCOLHA DO COMPUTADOR: {}!'.format(escolha.upper(), ia.upper()))
-    print('VOCÊ GANHOU!')
+    print('{}VOCÊ GANHOU!{}'.format(cores['verde'], cores['limpa']))
 print('=-='*30)
