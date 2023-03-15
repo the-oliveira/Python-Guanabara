@@ -1,6 +1,6 @@
 nota1 = float(input('Primeira nota: '))
 nota2 = float(input('Segunda nota: '))
-med = (nota1+nota2)/2
+med = (nota1 + nota2) / 2
 
 if med >= 7:
     print('\033[1:32mParabéns, você ficou com a média {:.1f} e foi aprovado!'.format(med))
