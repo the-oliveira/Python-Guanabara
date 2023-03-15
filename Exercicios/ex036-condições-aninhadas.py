@@ -9,7 +9,7 @@ cores = {'vermelho':'\033[1:31m',
 parcelas = anos*12
 valorparcela = casa/parcelas
 
-if valorparcela < salario*30/100:
+if valorparcela <= salario*30/100:
     print('Parabéns, o seu financiamento foi {}aprovado!{}'.format(cores['verde'], cores['limpa']))
     print('Você ira comprar uma casa de R${:.2f} em {}x de R${:.2f}'.format(casa, parcelas, valorparcela))
 else:
