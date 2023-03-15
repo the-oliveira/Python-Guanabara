@@ -12,8 +12,8 @@ else:
     exit()
 if reta1 == reta2 and reta1 == reta3 and reta2 == reta3:
     print('O triângulo formado é um \033[4:34mEquilátero\033[m.')
-elif reta1 == reta2 and reta2 != reta3 and reta1 != reta3 or reta2 == reta3 and reta1 != reta2 and reta1 != reta3 or reta3 == reta1 and reta3 != reta2 and reta1 != reta2:
-    print('O triângulo formado é um \033[4:34mIsósceles\033[m.')
 elif reta1 != reta2 and reta2 != reta3 and reta3 != reta1:
     print('O triângulo formado é um \033[4:34mEscaleno\033[m.')
+else:
+    print('O triângulo formado é um \033[4:34mIsósceles\033[m.')
 
