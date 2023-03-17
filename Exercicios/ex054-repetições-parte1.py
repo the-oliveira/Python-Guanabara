@@ -11,6 +11,6 @@ for c in range(1,8):
     else:
         menor = menor + 1
 
-print('{} são maiores de idade.'.format(maior))
-print('{} são menores de idade.'.format(menor))
+print(f'Ao todo {maior} são maiores de idade.')
+print(f'E também tivemos {menor} menores de idade.')
 
