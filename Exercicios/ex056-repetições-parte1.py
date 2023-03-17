@@ -11,7 +11,7 @@ for c in range(1,5):
 
     if sexo == 'f' and idade < 20:
         vinte = vinte + 1
-    elif sexo == 'm' and c == 1:
+    if sexo == 'm' and c == 1:
         maioridade = idade
         nomevelho = nome
     if sexo == 'm' and idade > maioridade:
