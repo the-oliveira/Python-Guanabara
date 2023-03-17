@@ -4,8 +4,8 @@ maior = 0
 menor = 0
 presente = datetime.date.today().year
 
-for c in range(0,7):
-    ano = int(input('Ano de nascimento: '))
+for c in range(1,8):
+    ano = int(input(f'Ano de nascimento da {c}ª pessoa: '))
     if presente - ano >= 21:
         maior = maior + 1
     else:
