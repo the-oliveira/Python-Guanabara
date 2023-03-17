@@ -1,5 +1,5 @@
 lista = []
-for p in range(0, 5):
+for p in range(1, 6):
     peso = float(input(f'Digite o peso da {p}ª pessoa: '))
     lista += [peso]
 
