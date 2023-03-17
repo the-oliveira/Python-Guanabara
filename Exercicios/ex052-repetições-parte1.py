@@ -1,6 +1,14 @@
-for c in range(1,10):
-    n = int(input('Digite um número: '))
-    if n > 1 and n / n == 1:
-        print('O número é primo.')
+n = int(input('Digite um número: '))
+div = 0
+for c in range(1, n + 1):
+    if n % c == 0:
+        print(f'\033[1:31m{c} \033[m', end='')
+        div += 1
     else:
-        print('O número não é primo.')
+        print(f'\033[1:32m{c} \033[m', end='')
+
+print(f'\nO número {n} foi divisível {div} vezes, portanto:')
+if div > 2:
+    print('Ele \033[1:31mNÃO É PRIMO\033[m')
+else:
+    print('Ele \033[1:32mÉ PRIMO\033[m')
