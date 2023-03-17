@@ -13,3 +13,4 @@ if div == 2:
     print('Ele \033[1:32mÉ PRIMO\033[m')
 else:
     print('Ele \033[1:31mNÃO É PRIMO\033[m')
+    
