@@ -2,7 +2,6 @@ med = 0
 vinte = 0
 maioridade = 0
 nomevelho = ''
-
 for c in range(1,5):
     nome = str(input('NOME: ')).strip()
     idade = int(input('IDADE: '))
@@ -18,7 +17,6 @@ for c in range(1,5):
         maioridade = idade
         nomevelho = nome
     print('='*10)
-
 med = med/4
 print(f'O nome do homem mais velho é {nomevelho} e a sua idade é {maioridade:.0f}')
 print(f'A média de idade do grupo é de: {med:.1f}')
