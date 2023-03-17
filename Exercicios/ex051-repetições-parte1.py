@@ -1,8 +1,8 @@
 print('Representação de uma Progressão Aritmética.')
-pt = int(input('Digite o valor do primeiro termo: '))
+ptermo = int(input('Digite o valor do primeiro termo: '))
 razao = int(input('Digite a razão: '))
-pa = 0
-for c in range(pt, pt + 10, razao):
-    print(c)
+decimo = ptermo + (10 - 1) * razao
+for c in range(ptermo, decimo, razao):
+    print(f'{c}', end=' → ')
 
 
