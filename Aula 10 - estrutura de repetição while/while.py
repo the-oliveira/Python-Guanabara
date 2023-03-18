@@ -8,5 +8,4 @@ while c != 0:
             par += 1
         else:
             impar +=1
-
 print(f'Foram digitados {par} valores pares e {impar} valores impares.')
