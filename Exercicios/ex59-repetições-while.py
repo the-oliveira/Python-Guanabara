@@ -32,6 +32,7 @@ while escolha != 5:
         sleep(2)
     elif escolha == 5:
         print('\033[1:34mVolte sempre!\033[m')
+        sleep(2)
         exit()
     else:
         print('\033[1:31mComando inválido, tente novamente!\033[m')
