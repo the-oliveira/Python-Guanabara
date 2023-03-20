@@ -7,5 +7,4 @@ while contador > 0:
     print(' x ' if contador > 1 else ' = ', end='')
     mult *= contador
     contador -= 1
-
 print(mult)
