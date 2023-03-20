@@ -3,7 +3,7 @@ n1 = 0
 numero = 0
 while numero != 999:
     numeros += 1
-    numero = int(input('Digite um número: '))
+    numero = int(input('Digite um número (digite 999 se deseja finalizar a soma): '))
     if numero == 999:
         n1 -= 999
         numeros -= 1
