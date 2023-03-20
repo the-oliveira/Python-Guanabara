@@ -9,5 +9,4 @@ while n != rand:
         print('Talvez um pouco maior...')
     n = int(input('Tente novamente: '))
     tentativas += 1
-
 print(f'Você finalmente acertou! O número era {rand} e você acertou em {tentativas} tentativas.')
