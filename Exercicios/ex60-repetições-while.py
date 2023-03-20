@@ -1,7 +1,7 @@
 n1 = int(input('Digite um valor: '))
 fatorial = n1 - 1
-lista = []
-while fatorial != 0:
+
+while :
     mult = n1 * fatorial
     n1 -= 1
     lista = []
