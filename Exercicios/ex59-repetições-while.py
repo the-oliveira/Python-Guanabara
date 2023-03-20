@@ -28,6 +28,8 @@ while escolha != 5:
     if escolha == 5:
         print('\033[1:34mVolte sempre!\033[m')
         exit()
+    else:
+        print('\033[1:31mComando inválido, tente novamente!\033[m')
 
 
 
