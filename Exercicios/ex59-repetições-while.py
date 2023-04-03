@@ -4,11 +4,11 @@ n2 = int(input('Segundo valor: '))
 escolha = 0
 while escolha != 5:
     print('=-='*20)
-    print('[1] SOMAR')
-    print('[2] MULTIPLICAR')
-    print('[3] MAIOR')
-    print('[4] MUDAR OS NÚMEROS')
-    print('[5] SAIR DO PROGRAMA')
+    print('''[1] SOMAR
+[2] MULTIPLICAR
+[3] MAIOR
+[4] MUDAR OS NÚMEROS
+[5] SAIR DO PROGRAMA''')
     print('=-='*20)
     escolha = int(input('Escolha a ação que deseja realizar: '))
     if escolha == 1:
