@@ -8,10 +8,11 @@ while continuar == 's':
     n1 = int(input('Digite um número: '))
     med = med + n1
     termos += 1
-    if n1 > maior:
-        n1 = maior
-    elif n1 < menor:
-        n1 = menor
+    if termos > 0:
+        if n1 > maior:
+            maior = n1
+        if n1 < maior:
+            menor = n1
     continuar = str(input('Deseja continuar? [S/N] ')).lower().strip()
 
 
