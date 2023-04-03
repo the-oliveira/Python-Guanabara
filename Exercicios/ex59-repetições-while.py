@@ -27,8 +27,9 @@ while escolha != 5:
         print(f'\033[1:34mO maior valor entre {n1} e {n2} é o {maior}\033[m')
         sleep(2)
     elif escolha == 4:
-        n1 = int(input('Digite outro número: '))
-        n2 = int(input('Digite outro número: '))
+        print('\033[1:34mVamos alterar os valores então!\033[m')
+        n1 = int(input('Primeiro valor: '))
+        n2 = int(input('Segundo valor: '))
         sleep(2)
     elif escolha == 5:
         print('\033[1:34mVolte sempre!\033[m')
