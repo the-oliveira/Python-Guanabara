@@ -10,8 +10,6 @@ while continuar == 's':
     total += n1
     termos += 1
     continuar = str(input('Deseja continuar? [S/N] ')).lower().strip()
-
-
 media = total / termos
 print(f'A média entre todos os termos digitado é de {media}')
 print(f'O maior número digitado foi {max(lista, key=int)}')
