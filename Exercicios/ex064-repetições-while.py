@@ -9,4 +9,4 @@ while numero != 999:
         numeros -= 1
     n1 = numero + n1
 
-print(f'Você digitou {numeros} e a soma de todos eles é igual a {n1}')
+print(f'Você digitou {numeros} numeros e a soma de todos eles é igual a {n1}')
