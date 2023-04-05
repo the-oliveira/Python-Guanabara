@@ -1,8 +1,5 @@
 continuar = 's'
-total = 0
-maior = 0
-menor = 0
-termos = 0
+total = maior = menor = termos = 0
 lista = []
 while continuar == 's':
     n1 = int(input('Digite um número: '))
