@@ -17,9 +17,9 @@ while perder == 0:
         sleep(1)
         print(f'A soma deu {soma}, portanto o resultado foi PAR!')
         if jogador == 'PAR':
-            sleep(1)
             vitorias += 1
             sleep(1)
+            print('=' * 70)
             print('Você ganhou! Vamos continuar!')
             print('=' * 70)
         else:
@@ -32,6 +32,7 @@ while perder == 0:
         if jogador == 'IMPAR':
             vitorias += 1
             sleep(1)
+            print('=' * 70)
             print('Você ganhou! Vamos continuar!')
             print('=' * 70)
         else:
