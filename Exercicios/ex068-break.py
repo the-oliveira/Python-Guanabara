@@ -2,6 +2,9 @@ from random import randint
 from time import sleep
 perder = 0
 vitorias = 0
+print('=' * 70)
+print('\033[1:32mBEM-VINDO! VAMOS JOGAR PAR OU ÍMPAR!\033[m')
+print('=' * 70)
 while perder == 0:
     jogador = str(input('Escolha PAR ou IMPAR: ')).upper().strip()
     if jogador == 'PAR':
