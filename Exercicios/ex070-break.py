@@ -15,9 +15,9 @@ while True:
         maisbarato = nomeproduto
         menor = valor
     total += valor
-    continuar = str(input('Deseja finalizar a compra? [S/N] ')).strip().upper()[0]
+    continuar = str(input('Deseja comprar mais algo? [S/N] ')).strip().upper()[0]
     if continuar == 'N':
         break
 print(f'O valor total gaasto na compra foi de R${total:.2f}.')
-print(f'O produto mais barato foi o {maisbarato}, custando R${menor:.2f}')
-print(f'{maisde1k} custaram mais de R$1000.')
+print(f'O produto mais barato foi o(a) {maisbarato}, custando R${menor:.2f}')
+print(f'{maisde1k} produto(s) custaram mais de R$1000.')
