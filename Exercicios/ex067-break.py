@@ -1,6 +1,6 @@
 cont = 1
 tabuada = int(input('Digite a tabuada que deseja ver: '))
-while cont <= 11:
+while True:
     mult = tabuada*cont
     print(f'{tabuada} x {cont} = {mult}')
     cont += 1
