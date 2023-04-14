@@ -1,11 +1,10 @@
 from random import randint
 from time import sleep
-perder = 0
 vitorias = 0
 print('=' * 70)
-print('\033[1:32mBEM-VINDO! VAMOS JOGAR PAR OU ÍMPAR!\033[m')
+print('\033[1:35mBEM-VINDO! VAMOS JOGAR PAR OU ÍMPAR!\033[m')
 print('=' * 70)
-while perder == 0:
+while True:
     jogador = str(input('Escolha PAR ou IMPAR: ')).upper().strip()
     if jogador == 'PAR':
         computador = 'IMPAR'
@@ -23,11 +22,10 @@ while perder == 0:
             vitorias += 1
             sleep(1)
             print('=' * 70)
-            print('Você ganhou! Vamos continuar!')
+            print('\033[1:32mVocê ganhou! Vamos continuar!\033[m')
             print('=' * 70)
         else:
             sleep(1)
-            perder += 1
             break
     else:
         sleep(1)
@@ -36,12 +34,11 @@ while perder == 0:
             vitorias += 1
             sleep(1)
             print('=' * 70)
-            print('Você ganhou! Vamos continuar!')
+            print('\033[1:32mVocê ganhou! Vamos continuar!\033[m')
             print('=' * 70)
         else:
-            perder += 1
             break
 sleep(1)
 print('='*70)
-print(f'Você perdeu! durante seu percurso você ganhou {vitorias} vez(es), tente novamente!')
+print(f'\033[1:31mVocê perdeu! durante seu percurso você ganhou {vitorias} vez(es), tente novamente!\033[m')
 print('='*70)
