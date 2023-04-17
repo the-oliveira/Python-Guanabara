@@ -18,11 +18,13 @@ while True:
         menor = valor
     total += valor
     cont += 1
-    continuar = str(input('Deseja comprar mais algo? [S/N] ')).strip().upper()[0]
+    continuar = ' '
+    while continuar not in 'SN':
+        continuar = str(input('Deseja comprar mais algo? [S/N] ')).strip().upper()[0]
     if continuar == 'N':
         break
 print('='*50)
-print(f'O valor total gaasto na compra foi de R${total:.2f}.')
+print(f'O valor total foi de R${total:.2f}.')
 print(f'O produto mais barato foi o(a) {maisbarato}, custando R${menor:.2f}')
 print(f'{maisde1k} produto(s) custaram mais de R$1000.')
 print('='*50)
