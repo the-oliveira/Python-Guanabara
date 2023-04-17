@@ -1,7 +1,4 @@
-total = 0
-maisde1k = 0
-cont = 0
-menor = 0
+total = maisde1k = cont = menor = 0
 maisbarato = ''
 while True:
     print('='*50)
