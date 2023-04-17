@@ -6,7 +6,9 @@ while True:
     print('CADASTRO DE CLIENTES.')
     print('=' * 20)
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
     if sexo != 'M' and sexo != 'F':
         sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
     if sexo == 'M':
@@ -15,7 +17,9 @@ while True:
         mais18 += 1
     if idade <= 20 and sexo == 'F':
         mulheres20 += 1
-    continuar = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
+    continuar = ' '
+    while continuar not in 'SN':
+        continuar = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
     if continuar != 'S' and continuar != 'N':
         continuar = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
     if continuar == 'N':
