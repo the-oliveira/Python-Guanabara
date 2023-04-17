@@ -7,8 +7,6 @@ while True:
     sexo = ' '
     while sexo not in 'MF':
         sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
-    if sexo != 'M' and sexo != 'F':
-        sexo = str(input('Sexo [M/F]: ')).upper().strip()[0]
     if sexo == 'M':
         homens += 1
     if idade >= 18:
@@ -25,5 +23,5 @@ while True:
 print('=' * 80)
 print(f'Dentre os clientes cadastrados {mais18} são maiores de 18 anos, tanto do sexo masculino quanto feminino.')
 print(f'Sendo ao todo {mulheres20} mulher(es) menor(es) de 20 anos.')
-print(f'E também consta nos registros {homens} homen(s) cadastrados.')
+print(f'E também consta nos registros {homens} homem(s) cadastrados.')
 print('=' * 80)
