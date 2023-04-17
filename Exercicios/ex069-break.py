@@ -1,6 +1,4 @@
-mais18 = 0
-homens = 0
-mulheres20 = 0
+mais18 = homens = mulheres20 = 0
 while True:
     print('='*20)
     print('CADASTRO DE CLIENTES.')
