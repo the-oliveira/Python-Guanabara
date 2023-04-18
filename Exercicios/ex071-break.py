@@ -1,3 +1,4 @@
+print(f'{" BANCO B9 ":=^30}')
 sacar = int(input('Quanto deseja sacar? '))
 valor = sacar
 totalced = 0
@@ -15,5 +16,7 @@ while True:
             cedatual = 10
         elif cedatual == 10:
             cedatual = 1
+        totalced = 0
         if valor == 0:
             break
+print(f'{"VOLTE SEMPRE":=^30}')
