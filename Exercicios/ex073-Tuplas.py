@@ -4,7 +4,8 @@ print(f'Os 5 primeiros colocados são: {tabela[0:5]}')
 print(f'Os Ultimos 4 colocados: {tabela[-4:]}')
 print('A ordem alfabética dos times: ', end='')
 print(sorted(tabela))
-print('O time do Corinthians está na posição: ', end='')
-print(tabela.index('Corinthians')+1)
+time = str(input('Quer saber a posição de que time? ')).strip().capitalize()
+print(f'O time do {time} está na posição: ', end='')
+print(tabela.index(time)+1)
 
 
