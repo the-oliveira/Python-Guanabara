@@ -8,8 +8,7 @@ print(f'Os Ultimos 4 colocados: {tabela[-4:]}')
 print('='*50)
 print(f'A ordem alfabética dos times: {sorted(tabela)}')
 print('='*50)
-time = str(input('Quer saber a posição de que time? ')).strip().capitalize()
-print(f'O time do {time} está na posição: {tabela.index(time)+1}')
+print(f'O time do Corinthians está na posição: {tabela.index("Corinthians")+1}')
 print('='*50)
 
 
