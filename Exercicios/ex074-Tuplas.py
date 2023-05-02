@@ -1,3 +1,7 @@
 from random import sample
-count =
-tupla = ''
+tupla = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+sorteio = sample(tupla, 5)
+
+print(sorteio)
+print(f'O menor valor foi de {min(sorteio)}')
+print(f'O maior valor foi de {max(sorteio)}')
