@@ -1,3 +1,3 @@
-from random import random
-count = 0
+from random import sample
+count =
 tupla = ''
