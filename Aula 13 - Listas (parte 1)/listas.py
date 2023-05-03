@@ -16,7 +16,9 @@
 #variavel.sort(reverse=True) para ordenar do maior pro menor
 
 #len(variavel) para saber o tamanho da lista
-num = [0,1,2,3,4,5,6,7,8,9]
+
+
+num = list(range(0, 11))
 print(num)
 num[0] = 8
 print(num)
@@ -29,6 +31,15 @@ num.insert(1, 2000)
 num.pop()
 del num[0]
 num.remove(2000)
+if 4 in num:
+    num.remove(4)
+else:
+    print('Não encontrei o número 4')
 print(num)
 print(f'Número de elementos na lista: {len(num)}')
+for cont in range(0,5):
+    num.append(int(input('Digite um valor: ')))
+for c, v in enumerate(num):
+    print(f'Na posição {c} da lista temos o valor {v}!')
+print('Fim da lista')
 
