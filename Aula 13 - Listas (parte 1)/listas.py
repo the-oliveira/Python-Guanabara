@@ -16,5 +16,15 @@
 #variavel.sort(reverse=True) para ordenar do maior pro menor
 
 #len(variavel) para saber o tamanho da lista
-
+num = [0,1,2,3,4,5,6,7,8,9]
+print(num)
+num[0] = 8
+print(num)
+num.append(22)
+print(num)
+num.sort()
+print(num)
+num.sort(reverse=True)
+print(num)
+print(f'Número de elementos na lista: {len(num)}')
 
