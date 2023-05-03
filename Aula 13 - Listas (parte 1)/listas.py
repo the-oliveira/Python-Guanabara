@@ -17,6 +17,9 @@
 
 #len(variavel) para saber o tamanho da lista
 
+#Se fizermos uma lista 'a' e atribuirmos a uma lista 'b' (b = a) as listas irão se conectar, alterando os valores de forma igual.
+#Para criar uma copia da lista, basta colocarmos b = a[:} para que ele copie apenas os valores e não crie conexão
+
 
 num = list(range(0, 11))
 print(num)
