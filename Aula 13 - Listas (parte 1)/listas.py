@@ -25,6 +25,10 @@ print(num)
 num.sort()
 print(num)
 num.sort(reverse=True)
+num.insert(1, 2000)
+num.pop()
+del num[0]
+num.remove(2000)
 print(num)
 print(f'Número de elementos na lista: {len(num)}')
 
