@@ -12,6 +12,11 @@ for n in range(0, 5):
             lista.insert(0, num)
             print(f'Número adicionado no inicio da lista.. posição {lista.index(num)}')
         else:
-            lista.append(num)
-            print(f'Número adicionado na posição: {lista.index(num)}')
-print(sorted(lista))
+            pos = 0
+            while pos <= len(lista):
+                if num <= lista[pos]:
+                    lista.insert(pos, num)
+                    print(f'Número adicionado na posição {pos}!')
+                    break
+                pos += 1
+print(lista)
