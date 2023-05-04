@@ -1,6 +1,7 @@
 lista = []
 for valor in range(0, 5):
     lista.append(int(input('Digite um valor: ')))
+print(lista)
 if lista.count(max(lista)) >= 2:
     print(f'O maior valor digitado foi {max(lista)} nas posições: ', end='')
     for p, v in enumerate(lista):
