@@ -16,7 +16,7 @@ while True:
         break
 print('='*50)
 print(f'A lista completa ficou desta forma: {lista}')
-print(f'Os números pares formaram esta outra lista: {par}')
-print(f'Já os números impares formaram esta: {impar}')
+print(f'Os números pares foram: {par}')
+print(f'Já os números impares foram: {impar}')
 print('Volte sempre!')
 print('='*50)
