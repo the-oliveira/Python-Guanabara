@@ -14,7 +14,16 @@ teste[1] = 22
 galera.append(teste[:]) #o parametro [:] cria uma cópia, se não utilizar ele ainda tera ligação com a lista depois de alterar e vai repetir os dados
 print(galera)
 
-galera2 = [[str(input('Digite um nome: ')), int(input('Digite a idade: '))], [str(input('Digite um nome: ')), int(input('Digite a idade: '))], [str(input('Digite um nome: ')), int(input('Digite a idade: '))], [str(input('Digite um nome: ')), int(input('Digite a idade: '))]]
+galera2 = []
+dados = []
+while True:
+    dados.append(str(input('Nome do cliente: ')))
+    dados.append(int(input('Idade: ')))
+    galera2.append(dados[:])
+    dados.clear()
+    continuar = str(input('Deseja cadastrar um novo cliente? [S/N] ')).upper().split()[0]
+    if continuar == 'N':
+        break
+
 print(galera2)
-for p in galera2:
-    print(f'{p[0]} tem {p[1]} anos')
+print(dados)
