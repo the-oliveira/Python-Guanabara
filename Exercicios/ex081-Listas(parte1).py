@@ -3,9 +3,9 @@ while True:
     print('=' * 50)
     lista.append(int(input('Digite um valor: ')))
     print('=' * 50)
-    continuar = str(input('Deseja digitar um novo valor? [S/N]')).upper().split()[0]
+    continuar = str(input('Deseja digitar um novo valor? [S/N] ')).upper().split()[0]
     while continuar not in'SN':
-        continuar = str(input('Deseja digitar um novo valor? [S/N]')).upper().split()[0]
+        continuar = str(input('Deseja digitar um novo valor? [S/N] ')).upper().split()[0]
     if continuar == 'N':
         break
 lista.sort(reverse=True)
