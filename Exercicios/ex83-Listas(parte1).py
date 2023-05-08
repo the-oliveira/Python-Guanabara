@@ -9,5 +9,7 @@ for p in calculo:
 lista.append(calculo)
 if abre == fecha:
     print('Sua expressão é válida!')
+    print(f'A função digitada foi: {calculo}')
 else:
     print('Sua expressão não é válida!')
+    print(f'A função digitada foi: {calculo}')
