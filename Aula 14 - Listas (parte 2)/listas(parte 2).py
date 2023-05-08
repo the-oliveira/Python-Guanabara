@@ -26,4 +26,9 @@ while True:
         break
 
 print(galera2)
+for p in galera2:
+    if p[1] >= 18:
+        print(f'{p[0]} tem {p[1]}, portanto é maior de idade!')
+    else:
+        print(f'{p[0]} tem {p[1]}, ainda é menor de idade! ')
 print(dados)
