@@ -13,5 +13,3 @@ for x in range(0, jogos):
     print(f'Jogo número {x+1}: {lista}')
     sleep(1)
     lista.clear()
-
-
