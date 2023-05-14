@@ -9,9 +9,13 @@ while True:
         continuar = str(input('Comando inválido! Digite novamente: [S/N] ')).upper().split()[0]
     if continuar == 'N':
         break
-for p in range(0, len(alunos[0])):
-    for n1 in alunos[1]:
-        for n2 in alunos[2]:
-            print(f'{alunos[0][p]} ', end=' ')
-            media = (n1 + n2) / 2
-            print(f'Média do aluno: {media}')
+print("---Nª ----- ALUNO ----- MÉDIA")
+for n, p in enumerate(alunos[0]):
+    media = (alunos[1][n] + alunos[2][n]) / 2
+    print(f'{n:^5}{p:^10}{media:^20.2f}')
+while True:
+    continuar = int(input("Deseja ver as notas de qual aluno? (999 para interromper o programa): "))
+    if continuar == 999:
+        break
+    else:
+        print(f'As notas do aluno {alunos[0][continuar]} foram: {alunos[1][continuar]} e {alunos[2][continuar]}')
