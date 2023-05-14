@@ -20,5 +20,8 @@ while True:
     continuar = int(input("Deseja ver as notas de qual aluno? (999 para interromper o programa): "))
     if continuar == 999:
         break
-    else:
+    if continuar <= len(alunos[0]):
         print(f'As notas do aluno {alunos[0][continuar]} foram: {alunos[1][continuar]} e {alunos[2][continuar]}')
+
+    else:
+        print('Aluno não encontrado, tente novamente!')
