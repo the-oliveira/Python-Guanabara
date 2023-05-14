@@ -13,6 +13,7 @@ print("---Nª ----- ALUNO ----- MÉDIA")
 for n, p in enumerate(alunos[0]):
     media = (alunos[1][n] + alunos[2][n]) / 2
     print(f'{n:^5}{p:^10}{media:^20.2f}')
+print('-'*30)
 while True:
     continuar = int(input("Deseja ver as notas de qual aluno? (999 para interromper o programa): "))
     if continuar == 999:
