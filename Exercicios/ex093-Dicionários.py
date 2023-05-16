@@ -11,6 +11,7 @@ for p in range(0, partidas):
 jogador['gols'] = dados
 jogador['total'] = totalgols
 print(jogador)
-print(f'O jogador {jogador["nome"]} disputo {jogador["partidas"]}, marcando: ')
+print(f'O jogador {jogador["nome"]} disputo {jogador["partidas"]} partidas, marcando: ')
 for g in range(0, partidas):
-    print(f'No jogo {g+1} marcou {jogador["gols"][g]}')
+    print(f'Na partida {g+1} marcou {jogador["gols"][g]} gols')
+print(f'Ao todo foram {jogador["total"]} gols até o momento!')
