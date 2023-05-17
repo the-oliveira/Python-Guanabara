@@ -20,10 +20,17 @@ while True:
         continuar = str(input('Comando inválido! Deseja cadastrar mais alguém? [S/N] ')).upper().strip()[0]
     if continuar == 'N':
         break
+print('='*40)
 print(f'Ao todo foram cadastradas {len(lista)} pessoas')
 print(f'A média de idade foi de {idademedia/len(lista)}')
+print('As mulheres cadastradas foram: ', end=' ')
 for p, d in enumerate(lista):
     if lista[p]['Sexo'] == 'F':
-        mulheres.insert(lista[p]['Nome'])
-        print(f'{lista[p]["Nome"]}', end=' ')
-
+        print(f'{lista[p]["Nome"]} ', end=' ')
+print()
+print('Lista de pessoas acima da média de idade: ')
+for p, d in enumerate(lista):
+    if lista[p]['Idade'] >= idademedia/len(lista):
+        print(f'{d}', end=' ')
+    print()
+print('Fim do programa!')
