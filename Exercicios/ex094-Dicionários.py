@@ -1,4 +1,5 @@
 lista = []
+mulheres = []
 indice = {}
 idademedia = idade = 0
 while True:
@@ -23,4 +24,6 @@ print(f'Ao todo foram cadastradas {len(lista)} pessoas')
 print(f'A média de idade foi de {idademedia/len(lista)}')
 for p, d in enumerate(lista):
     if lista[p]['Sexo'] == 'F':
-        print(f'{lista[p]["Nome"]}, end=' ')
+        mulheres.insert(lista[p]['Nome'])
+        print(f'{lista[p]["Nome"]}', end=' ')
+
