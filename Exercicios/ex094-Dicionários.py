@@ -23,13 +23,13 @@ print('='*40)
 print(f'Ao todo foram cadastradas {len(lista)} pessoas')
 print(f'A média de idade foi de {idademedia/len(lista)}')
 print('As mulheres cadastradas foram: ', end=' ')
-for p, d in enumerate(lista):
-    if lista[p]['Sexo'] == 'F':
-        print(f'{lista[p]["Nome"]} ', end=' ')
+for p in lista:
+    if p['Sexo'] == 'F':
+        print(f'{p["Nome"]} ', end=' ')
 print()
 print('Lista de pessoas acima da média de idade: ')
 for p, d in enumerate(lista):
-    if lista[p]['Idade'] >= idademedia/len(lista):
+    if lista[p]['Idade'] > idademedia/len(lista):
         print(f'{d}', end=' ')
     print()
 print('Fim do programa!')
