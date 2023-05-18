@@ -1,5 +1,5 @@
 alunos = {'Nome':str(input("Nome do Aluno: ")), 'Média':float(input("Média do Aluno: "))}
-if alunos['Média'] >= 6:
+if alunos['Média'] >= 7:
     alunos['Situação'] = 'Aprovado'
 else:
     alunos['Situação'] = 'Reprovado'
