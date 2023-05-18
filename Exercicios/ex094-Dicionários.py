@@ -6,15 +6,14 @@ while True:
     indice['Nome'] = str(input('Nome: '))
     sexo = str(input('Sexo: [M/F] ')).upper().strip()[0]
     while sexo not in "MF":
+        print('Comando inválido! Digite apenas M ou F')
         sexo = str(input('Sexo: [M/F] ')).upper().strip()[0]
     indice['Sexo'] = sexo
     idade = int(input('Idade: '))
     idademedia += idade
     indice['Idade'] = idade
     lista.append(indice.copy())
-    del indice['Nome']
-    del indice['Sexo']
-    del indice['Idade']
+    indice.clear()
     continuar = str(input('Deseja cadastrar mais alguém? [S/N] ')).upper().strip()[0]
     while continuar not in "SN":
         continuar = str(input('Comando inválido! Deseja cadastrar mais alguém? [S/N] ')).upper().strip()[0]
