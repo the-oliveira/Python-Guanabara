@@ -1,17 +1,23 @@
 dados = []
 totalgols = 0
-jogador = {'nome':'', 'partidas':''}
-jogador['nome'] = str(input('Qual o nome do jogador? '))
-partidas = int(input(f'Quantas partidas {jogador["nome"]} disputou? '))
-jogador['partidas'] = partidas
+jogador = {}
+jogador['Nome'] = str(input('Qual o nome do jogador? '))
+partidas = int(input(f'Quantas partidas {jogador["Nome"]} disputou? '))
+jogador['Partidas'] = partidas
 for p in range(0, partidas):
     gols = int(input(f'Quantos gols na partida {p+1}? '))
     dados.append(gols)
     totalgols += gols
-jogador['gols'] = dados
-jogador['total'] = totalgols
+jogador['Gols'] = dados
+jogador['Total'] = totalgols
+print('=' * 50)
 print(jogador)
-print(f'O jogador {jogador["nome"]} disputo {jogador["partidas"]} partidas, marcando: ')
+print('=' * 50)
+print(f'O jogador {jogador["Nome"]} disputou {jogador["Partidas"]} partidas, marcando: ')
 for g in range(0, partidas):
-    print(f'Na partida {g+1} marcou {jogador["gols"][g]} gols')
-print(f'Ao todo foram {jogador["total"]} gols até o momento!')
+    print(f'   - Na partida {g+1} marcou {jogador["Gols"][g]} gols')
+print(f'Ao todo foram {jogador["Total"]} gols até o momento!')
+print('=' * 50)
+for k, v in jogador.items():
+    print(f' - {k}: {v}')
+print('=' * 50)
