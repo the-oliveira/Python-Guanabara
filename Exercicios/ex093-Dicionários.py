@@ -1,15 +1,12 @@
 dados = []
-totalgols = 0
 jogador = {}
 jogador['Nome'] = str(input('Qual o nome do jogador? '))
 partidas = int(input(f'Quantas partidas {jogador["Nome"]} disputou? '))
 jogador['Partidas'] = partidas
 for p in range(0, partidas):
-    gols = int(input(f'Quantos gols na partida {p+1}? '))
-    dados.append(gols)
-    totalgols += gols
-jogador['Gols'] = dados
-jogador['Total'] = totalgols
+    dados.append(int(input(f'Quantos gols na partida {p+1}? ')))
+jogador['Gols'] = dados[:]
+jogador['Total'] = sum(dados)
 print('=' * 50)
 print(jogador)
 print('=' * 50)
