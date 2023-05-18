@@ -1,19 +1,19 @@
 from random import randint
-total = []
-jogador1 = {'Jogador': 1, 'tirou': randint(0, 6)}
-jogador2 = {'Jogador': 2, 'tirou': randint(0, 6)}
-jogador3 = {'Jogador': 3, 'tirou': randint(0, 6)}
-jogador4 = {'Jogador': 4, 'tirou': randint(0, 6)}
-jogador5 = {'Jogador': 5, 'tirou': randint(0, 6)}
-jogador6 = {'Jogador': 6, 'tirou': randint(0, 6)}
-total.append(jogador1)
-total.append(jogador2)
-total.append(jogador3)
-total.append(jogador4)
-total.append(jogador5)
-total.append(jogador6)
-for p in total:
-    for k, v in p.items():
-        print(f'{k} {v}', end=' ')
-    print()
-print('Ranking dos jogadores: ')
+from time import sleep
+from operator import itemgetter
+jogadores = {'Jogador 1': randint(1, 6),
+             'Jogador 2': randint(1, 6),
+             'Jogador 3': randint(1, 6),
+             'Jogador 4': randint(1, 6)}
+ranking = []
+print('=' * 30)
+print('VALORES SORTEADOS: ')
+for k, v in jogadores.items():
+    sleep(1)
+    print(f'   - {k} tirou {v}')
+print()
+print('RANKING DOS JOGADORES: ')
+ranking = sorted(jogadores.items(), key=itemgetter(1), reverse=True)
+for p, j in enumerate(ranking):
+    sleep(0.5)
+    print(f'{p+1}º - {j[0]} que tirou {j[1]}')
