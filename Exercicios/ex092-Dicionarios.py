@@ -9,7 +9,7 @@ if ctps != 0:
     dados['CTPS'] = ctps
     dados['Salário'] = float(input('Digite o seu salário atual ou ultimo salário: R$'))
     dados['Contratação'] = int(input('Ano de contratação: '))
-    dados['Aposentadoria'] = idade + 32
+    dados['Aposentadoria'] = idade + ((dados['Contratação'] + 35) - datetime.now().year)
 else:
     dados['Situação'] = 'Não tem CTPS'
 for k, v in dados.items():
