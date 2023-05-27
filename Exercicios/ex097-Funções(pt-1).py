@@ -1,8 +1,9 @@
-def linhas(txt):
-    print('=' * len(txt))
-    print(txt)
-    print('=' * len(txt))
+def escreva(txt):
+    tamanho = len(txt) + 4
+    print('=' * tamanho)
+    print(f'  {txt}  ')
+    print('=' * tamanho)
 
 
 while True:
-    linhas(txt=str(input('Digite um texto: ')))
+    escreva(txt=str(input('Digite um texto: ')))
