@@ -1,6 +1,11 @@
 from time import sleep
 
+
 def contador(inicio, fim, passo):
+    if passo == 0:
+        passo += 1
+    if passo < 0:
+        passo *= -1
     print('=' * 40)
     print(f'Vamos contar de {inicio} até {fim} de {passo} em {passo}')
     print('=' * 40)
