@@ -11,8 +11,8 @@ def sorteio(lista):
         print(f'{n}', end=' ')
     print()
 
-def somapar():
-    print('Vamos somar os números pares sorteados!')
+def somapar(lista):
+    print('Vamos somar os números pares!')
     soma = 0
     print('São eles: ', end=' ')
     for n in numeros:
@@ -21,10 +21,9 @@ def somapar():
             print(f'{n} ', end=' ')
             soma += n
     print()
-    print(f'A soma dos números pares foi igual a: {soma}')
+    print(f'A soma dos números foi: {soma}')
 
 
 sorteio(numeros)
-print()
-somapar()
+somapar(numeros)
 
