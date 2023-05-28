@@ -1,6 +1,8 @@
 from random import randint
 from time import sleep
 numeros = []
+
+
 def sorteio(lista):
     for cont in range(0, 5):
         n = randint(1, 10)
@@ -10,6 +12,7 @@ def sorteio(lista):
         sleep(0.5)
         print(f'{n}', end=' ')
     print()
+
 
 def somapar(lista):
     print('Vamos somar os números pares!')
