@@ -39,3 +39,6 @@ soma()
 
 #Variaveis declaradas no programa principal são globais (escopo global), variaveis declaradas em funções são apenas locais (escopo local)
 # ou seja, só vão funcionar dentro do escopo da função.
+#Para utilizar e alterar a variavel global dentro de uma função basta utilizar a chamada global variavel, por exemplo "global a"
+
+#podemos utilizar a função return variavel para personalizar o retorno da mensagem de uma função, assim podemos chamar uma função e coloca-la dentro de uma variavel
