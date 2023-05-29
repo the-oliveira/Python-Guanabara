@@ -18,3 +18,24 @@ def contador(i, f, p):
 contador(1,20,1)
 help(contador)
 
+#Parametrôs opcionais são definidos com um valor padrão na hora de declarar a função, por exemplo declarando uma def de soma = 0
+
+
+def soma (a=0, b=0, c=0):
+    """
+    Função de soma
+    :param a: Recebe o primeiro valor
+    :param b: Recebe o segundo valor
+    :param c: Recebe o terceiro valor
+    :return: none
+    """
+    s = a+b+c
+    print(f'A soma final deu {s}')
+
+soma(1, 2, 3)
+soma(1)
+soma(10, 2)
+soma()
+
+#Variaveis declaradas no programa principal são globais (escopo global), variaveis declaradas em funções são apenas locais (escopo local)
+# ou seja, só vão funcionar dentro do escopo da função.
