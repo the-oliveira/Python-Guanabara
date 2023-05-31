@@ -1,10 +1,13 @@
 def fatorial(n=1):
-    show =
-    for n in range(num, 0, -1):
+    global n1
+    show = False
+    for n in range(n1, 0, -1):
         if show == True:
             print(f'{n} x', end=' ')
-        elif show == False:
+        else:
+            n1 *= n
+    print(n1)
 
 
-num = int(input('Digite um número: '))
-fatorial(num)
+n1 = int(input('Digite um número: '))
+fatorial(n1)
