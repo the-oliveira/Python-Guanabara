@@ -1,5 +1,5 @@
 def fatorial(n=1):
-    show = 
+    show =
     for n in range(num, 0, -1):
         if show == True:
             print(f'{n} x', end=' ')
