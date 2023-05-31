@@ -1,5 +1,8 @@
 def leiaint(n):
-    input(int(n))
+    int(input(n))
+    while n not in range(-99999, 999999999):
+        print('Comando inválido! tente novamente.')
+        n = leiaint('Digite um número: ')
 
 
 
