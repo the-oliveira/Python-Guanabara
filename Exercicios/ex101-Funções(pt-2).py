@@ -1,12 +1,10 @@
-from datetime import datetime
-
-
 def voto(nascimento):
     """
     Programa para descobrir se o voto é Obrigatório, opcional ou não pode votar.
     :param nascimento: Ano de nascimento
     :return: Situação
     """
+    from datetime import datetime
     n = datetime.today().year - nascimento
     if n < 16:
         return print(f'Com {n} anos: NÃO PODE VOTAR!')
