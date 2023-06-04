@@ -1,13 +1,25 @@
-def fatorial(n=1):
-    global n1
-    show = False
-    for n in range(n1, 0, -1):
+def fatorial(n=1, show=False):
+    """
+
+    :param n: Número que iremos calcular o Fatorial
+    :param show: Comando OPCIONAL
+    :return:
+    """
+    f = 1
+    for c in range(n, 0, -1):
         if show == True:
-            print(f'{n} x', end=' ')
-        else:
-            n1 *= n
-    print(n1)
+            print(f'{c}', end=' ')
+            if c > 1:
+                print(f' x ', end=' ')
+            else:
+                print(' = ', end=' ')
+        f *= c
+    return f
 
-
-n1 = int(input('Digite um número: '))
-fatorial(n1)
+n = int(input('Digite um número para ver seu fatorial: '))
+mostrar = str(input('Deseja ver a formula completa? [S/N] ')).upper()[0]
+if mostrar == 'S':
+    mostrar = True
+else:
+    mostrar = False
+print(fatorial(n, mostrar))
