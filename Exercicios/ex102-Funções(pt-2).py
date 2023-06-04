@@ -16,6 +16,7 @@ def fatorial(n=1, show=False):
         f *= c
     return f
 
+
 n = int(input('Digite um número para ver seu fatorial: '))
 mostrar = str(input('Deseja ver a formula completa? [S/N] ')).upper()[0]
 if mostrar == 'S':
