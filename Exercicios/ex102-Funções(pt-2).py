@@ -1,9 +1,9 @@
 def fatorial(n=1, show=False):
     """
-
+    Programa para calcular o Fatorial de um número
     :param n: Número que iremos calcular o Fatorial
-    :param show: Comando OPCIONAL
-    :return:
+    :param show: Comando OPCIONAL, mostra ou não a formula da conta
+    :return:Fatorial de N
     """
     f = 1
     for c in range(n, 0, -1):
@@ -24,3 +24,4 @@ if mostrar == 'S':
 else:
     mostrar = False
 print(fatorial(n, mostrar))
+help(fatorial)
