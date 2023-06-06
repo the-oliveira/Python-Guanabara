@@ -1,4 +1,10 @@
 def notas(*n, sit=False):
+    """
+    Programa para avaliar a situação de um conjunto de notas.
+    :param n: Recebe várias notas
+    :param sit: [Opcional]Caso queira mostrar a situação final colocar sit = True, por padrão sit = False.
+    :return: Dicionário com informações de notas, maior nota, menor nota, média e situação final(opcional)
+    """
     lista = [n]
     final = ''
     med = 0
@@ -20,3 +26,4 @@ def notas(*n, sit=False):
 
 resp = notas(5.5, 22.5, 1.5, sit=True)
 print(resp)
+help(notas)
