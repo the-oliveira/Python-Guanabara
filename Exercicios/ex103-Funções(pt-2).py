@@ -7,11 +7,17 @@ def ficha(j='<Desconhecido>', g=0, a=0):
     :return: String com os dados informados.
     """
     j = str(input('Nome do jogador: '))
-    g = int(input('Quantidade de gols: '))
-    a = int(input('Quantidade de assistências: '))
+    if j.strip() == '':
+        j = '<Desconhecido>'
+    g = str(input('Quantidade de gols: '))
+    if g.isnumeric() == False:
+        g = 0
+    a = str(input('Quantidade de assistências: '))
+    if a.isnumeric() == False:
+        a = 0
     return print(f'O jogador {j} fez {g} gols e {a} assistências no campeonato!')
 
 
-print('=' * 40)
+print('=' * 60)
 ficha()
-print('=' * 40)
+print('=' * 60)
