@@ -23,7 +23,6 @@ def notas(*n, sit=False):
         return {'Total': len(lista[0]), 'Maior Nota':max(lista[0]), 'Menor nota': min(lista[0]), 'Média': med, 'Situação': final}
 
 
-
 resp = notas(5.5, 22.5, 1.5, sit=True)
 print(resp)
 help(notas)
