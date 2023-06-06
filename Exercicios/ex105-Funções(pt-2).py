@@ -1,19 +1,22 @@
 def notas(*n, sit=False):
     lista = [n]
+    final = ''
     med = 0
-    for n in lista:
+    for n in lista[0]:
         med += n
-    med = med / len(lista)
-    lista.sort()
-    if sit == True:
-        if med >= 7:
-            return 'APROVADO'
-        if med < 5:
-            return 'REPROVADO'
-        else:
-            return 'RECUPERAÇÃO'
-    dicionario = {'Total': len(lista), 'Maior Nota':max(lista), 'Menor nota': min(lista), 'Média': n, 'Situação': sit}
+    med = med / len(lista[0])
+    if med > 7:
+        final = 'APROVADO'
+    elif med < 5:
+        final = 'REPROVADO'
+    elif 5 < med < 7:
+        final = 'RECUPERAÇÃO'
+    if sit == False:
+        return {'Total': len(lista[0]), 'Maior Nota': max(lista[0]), 'Menor nota': min(lista[0]), 'Média': med}
+    else:
+        return {'Total': len(lista[0]), 'Maior Nota':max(lista[0]), 'Menor nota': min(lista[0]), 'Média': med, 'Situação': final}
 
 
 
-resp = notas(3, 4, 5, 6, 7)
+resp = notas(5.5, 22.5, 1.5, sit=True)
+print(resp)
