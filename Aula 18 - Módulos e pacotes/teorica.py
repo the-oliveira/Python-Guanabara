@@ -1,9 +1,5 @@
-def fatorial(n):
-    f = 1
-    for c in range(1, n+1):
-        f *= c
-    return f
-
+import uteis
 n = int(input('Digite um número> '))
-fat = fatorial(n)
+fat = uteis.fatorial(n)
 print(f'O fatorial de {n} é {fat}')
+print(f'O dobro de {n} é {uteis.dobro(n)}')
