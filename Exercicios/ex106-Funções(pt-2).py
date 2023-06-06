@@ -5,8 +5,8 @@ def Pyhelp():
         print(f'\033[1:30:45m    SISTEMA DE AJUDA PYHELP   ')
         print('\033[1:30:45m=' * 30)
         comando = str(input('\033[1:32:40m[PyHELP]   DIGITE UM COMANDO OU BIBLIOTECA: '))
-        if comando == 'finalizar':
-            print('\033[1:30:45m Fim do programa! Volte sempre!')
+        if comando.lower() == 'fim':
+            print('\033[1:30:42m[PyHELP] Fim do programa! Volte sempre!')
             sleep(1)
             break
         sleep(0.5)
