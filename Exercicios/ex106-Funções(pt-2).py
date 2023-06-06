@@ -3,7 +3,7 @@ cores = ('\033[m',             #limpa    0
          '\033[1;34;40m',      #Azul     1
          '\033[1;36;40m',      #Ciano    2
          '\033[1:30:41m',      #Vermelho 3
-         '\033[1:35m'          #Magenta  4
+         '\033[1:35:40m'          #Magenta  4
          )
 
 
