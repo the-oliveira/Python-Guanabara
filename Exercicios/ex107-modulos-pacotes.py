@@ -1,4 +1,4 @@
-import moeda
+from utilidades import moeda
 #Exercicio para criar funções iniciais retornando o dobro, metade, acréscimo e decréscimo de valores.
 p = float(input('Digite um preço: R$'))
 print(f'A metade de R${p:.2f} é R${moeda.metade(p):.2f}')

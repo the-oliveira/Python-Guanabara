@@ -1,4 +1,4 @@
-import moeda
+from utilidades import moeda
 #Exercicio simplificando a chamada da conversão de moeda, para isso utilizamos um if antes de dar return no 'res'
 #Adicionamos também a condicional True para formato
 p = float(input('Digite um preço: R$'))
