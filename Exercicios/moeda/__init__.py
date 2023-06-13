@@ -19,4 +19,4 @@ def desconta(valor=0, desconto=0):
 
 
 def moeda(valor=0, moeda='R$'):
-    return f'{moeda}{valor:.2f}'.replace('.', ',')
+    return f'{moeda}{valor:>.2f}'.replace('.', ',')
