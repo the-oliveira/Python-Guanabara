@@ -1,19 +1,18 @@
 def dobro(valor):
-    dobro = valor * 2
-    return dobro
+    res = dobro = valor * 2
+    return res
 
 
 def metade(valor):
-    metade = valor / 2
-    return metade
+    res = metade = valor / 2
+    return res
 
 
 def aumenta(valor, aumento=0):
-    dez = (valor * aumento / 100) + valor
-    return dez
+    res = dez = (valor * aumento / 100) + valor
+    return res
 
 
 def desconta(valor, desconto=0):
-    treze = valor - (valor * desconto / 100)
-    return treze
-
+    res = treze = valor - (valor * desconto / 100)
+    return res
