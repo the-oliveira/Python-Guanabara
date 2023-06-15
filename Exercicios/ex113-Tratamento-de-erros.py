@@ -29,5 +29,5 @@ def leiafloat(msg):
 
 
 inteiro = leiaint('Digite um número inteiro: ')
-numerofloat = leiafloat('Digite um número float: ')
-print(f'Você digitou o número inteiro: {inteiro} e o float foi: {numerofloat}')
+numerofloat = leiafloat('Digite um número real: ')
+print(f'Você digitou o número inteiro: {inteiro} e o real foi: {numerofloat}')
