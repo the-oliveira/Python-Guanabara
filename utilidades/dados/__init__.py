@@ -21,3 +21,17 @@ def leiaint(msg):
         else:
             print(f'\033[1:31mErro, digite um número inteiro válido: \033[m')
     return valor
+
+
+def leiafloat(msg):
+    valido = False
+    valor = 0
+    while True:
+        n = str(input(msg))
+        if n.isdecimal():
+            valor = n
+            valido = True
+            break
+        else:
+            print(f'\033[1:31mErro, digite um número inteiro válido: \033[m')
+    return valor
