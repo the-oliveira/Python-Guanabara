@@ -1,5 +1,5 @@
-from menu import *
-from arquivo import *
+from ex115.arquivo import *
+from ex115.menu import *
 from time import sleep
 
 arq = 'projetinhofinal.txt'

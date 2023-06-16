@@ -1,7 +1,7 @@
 def arquivoExiste(nome):
     try:
         #comando open = ele irá abrir um arquivo dentro do diretório.
-        #o 'rt' após o nome do arquivo significa "read" e "Text", ou seja, um arquivo de texto que possa ser lido e editado.
+        #o 'rt' após o nome do arquivo significa "read" e "Text", ou seja, verifica o arquivo se é possível ler ele.
         #close = fecha o arquivo após abri-lo.
         a = open(nome, 'rt')
         a.close()
@@ -22,3 +22,16 @@ def criarArquivo(nome):
         print(f'Houve um erro ao criar o arquivo {nome}')
     else:
         print(f'Arquivo {nome} criado com sucesso!')
+
+
+
+def lerAqruivo(nome):
+    try:
+        a = open(nome, 'rt')
+    except:
+        print('Erro ao tentar abrir o arquivo!')
+    else:
+        print('=' * 45)
+        print('PESSOAS CADASTRADAS'.center(50))
+        print('=' * 45)
+        print(a.readlines())

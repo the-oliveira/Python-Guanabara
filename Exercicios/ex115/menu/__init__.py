@@ -16,7 +16,7 @@ def menuprincipal():
             escolha = int(input('\033[1:35mSua opção: \033[m'))
             if escolha == 1:
                 print('=' * 40)
-                print('oi')
+                lerArquivo(arq)
                 print('=' * 40)
             elif escolha == 2:
                 print('=' * 40)
