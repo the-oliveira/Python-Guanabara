@@ -34,5 +34,27 @@ def lerAqruivo(nome):
         print('=' * 40)
         print('PESSOAS CADASTRADAS'.center(40))
         print('=' * 40)
-        print(a.read())
+        for linha in a:
+            dado = linha.split(';')
+            dado[1] = dado[1].replace('\n', '')
+            print(f'{dado[0]:<30}{dado[1]:3>} anos')
         #readlines pega as linhas do arquivo e joga em uma lista, apenas read = ele irá jogar todo o conteudo.
+    finally:
+        a.close()
+
+def cadastrar(arq, nome='desconhecido', idade=0):
+    try:
+        #o 'at' significa que iremos dar append (acrescentar) ao arquivo de texto.
+        a = open(arq, 'at')
+    except:
+        print('Houve um erro ao adicionar no arquivo!')
+    else:
+        try:
+            a.write(f'{nome};{idade}\n')
+        except:
+            print('ERRO - Não foi possível escrever os dados informados.')
+        else:
+            print(f'{nome} foi adicionado ao banco de dados!')
+            a.close()
+
+

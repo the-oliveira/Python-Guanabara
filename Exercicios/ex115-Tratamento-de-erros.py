@@ -1,6 +1,6 @@
 from time import sleep
 from utilidades.interface.menucreate import *
-
+from utilidades.dados import *
 arq = 'projetinhofinal.txt'
 if arquivoExiste(arq):
     print('Abrindo arquivo... por favor aguarde!')
@@ -11,18 +11,21 @@ else:
     print('Criando novo arquivo... por favor aguarde!!')
     sleep(1)
     criarArquivo(arq)
-menuprincipal(arq)
 escolha = 0
 while True:
     try:
+        menuprincipal(arq)
         escolha = int(input('\033[1:35mSua opção: \033[m'))
         if escolha == 1:
             lerAqruivo(arq)
             print('=' * 40)
         elif escolha == 2:
             print('=' * 40)
-            print('oi 2')
+            print('NOVO CADASTRO'.center(40))
             print('=' * 40)
+            nome = str(input('Nome: '))
+            idade = leiaint('Idade: ')
+            cadastrar(arq, nome, idade)
         elif escolha == 3:
             print('=' * 40)
             print(f'\033[1:32m{"Programa encerrado, volte sempre!!":^40}\033[m')
