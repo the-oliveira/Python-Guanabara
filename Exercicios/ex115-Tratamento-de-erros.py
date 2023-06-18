@@ -1,5 +1,5 @@
 from time import sleep
-from utilidades.menu.menucreate import *
+from utilidades.interface.menucreate import *
 
 arq = 'projetinhofinal.txt'
 if arquivoExiste(arq):

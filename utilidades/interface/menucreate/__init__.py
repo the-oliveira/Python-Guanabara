@@ -1,4 +1,4 @@
-from utilidades.menu.arquivo import *
+from utilidades.interface.arquivo import *
 def menuprincipal(nome):
     """
     Menu interativo para ver, cadastrar ou sair do sistema, feito com tratamento de erro.
