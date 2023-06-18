@@ -34,4 +34,5 @@ def lerAqruivo(nome):
         print('=' * 40)
         print('PESSOAS CADASTRADAS'.center(40))
         print('=' * 40)
-        print(a.readlines())
+        print(a.read())
+        #readlines pega as linhas do arquivo e joga em uma lista, apenas read = ele irá jogar todo o conteudo.
