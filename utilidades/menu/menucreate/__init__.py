@@ -1,4 +1,5 @@
-def menuprincipal():
+from utilidades.menu.arquivo import *
+def menuprincipal(nome):
     """
     Menu interativo para ver, cadastrar ou sair do sistema, feito com tratamento de erro.
     :return: None
@@ -15,8 +16,7 @@ def menuprincipal():
         try:
             escolha = int(input('\033[1:35mSua opção: \033[m'))
             if escolha == 1:
-                print('=' * 40)
-                lerArquivo(arq)
+                lerAqruivo(nome)
                 print('=' * 40)
             elif escolha == 2:
                 print('=' * 40)
@@ -42,5 +42,3 @@ def menuprincipal():
             print(f'\033[1:31mPrograma interrompido pelo usuário.\033[m'.center(50))
             print('=' * 40)
             break
-
-

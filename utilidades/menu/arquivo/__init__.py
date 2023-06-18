@@ -1,7 +1,7 @@
 def arquivoExiste(nome):
     try:
         #comando open = ele irá abrir um arquivo dentro do diretório.
-        #o 'rt' após o nome do arquivo significa "read" e "Text", ou seja, verifica o arquivo se é possível ler ele.
+        #o 'rt' após o nome do arquivo significa "read" e "Text", ou seja, ele irá ler o arquivo (se existir).
         #close = fecha o arquivo após abri-lo.
         a = open(nome, 'rt')
         a.close()
@@ -31,7 +31,7 @@ def lerAqruivo(nome):
     except:
         print('Erro ao tentar abrir o arquivo!')
     else:
-        print('=' * 45)
-        print('PESSOAS CADASTRADAS'.center(50))
-        print('=' * 45)
+        print('=' * 40)
+        print('PESSOAS CADASTRADAS'.center(40))
+        print('=' * 40)
         print(a.readlines())
