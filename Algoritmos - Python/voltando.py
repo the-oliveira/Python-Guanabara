@@ -1,1 +1,0 @@
-print('Retomando os estudos!')
